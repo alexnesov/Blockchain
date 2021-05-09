@@ -1,5 +1,5 @@
 # Blockchain
-Getting familiar with block-chain principles with 
+3 blockchain projects: 
 <ul>
   <li>Python, JavaScript &amp; React
   <li>JavaScript, Solidity, React
