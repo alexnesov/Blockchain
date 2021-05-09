@@ -23,6 +23,7 @@ class Block:
             f'last_hash: {self.last_hash}, '
             f'hash: {self.hash}, '
             f'Block - data: {self.data})' 
+            '\n'
         )
 
     @staticmethod
