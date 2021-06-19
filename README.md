@@ -7,5 +7,5 @@
 </ul>
 
 
-<script>python3 -m venv blockchain-env</script>
-<script>python3 -m backend.blockchain.block</script>
+````python3 -m venv blockchain-env````
+````python3 -m backend.blockchain.block````
