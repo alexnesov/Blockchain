@@ -1,4 +1,8 @@
 # Blockchain
+
+[![This package is currently under development.](https://img.shields.io/badge/under-development-orange.svg)](https://github.com/sdhutchins/flask-demo)
+
+
 3 blockchain projects: 
 <ul>
   <li>Python, JavaScript, React
@@ -9,10 +13,6 @@
 
 **Activate the virtual environment**:
 ```source blockchain-env/bin/activate```
-
-**Install all packages**:
-```pip3 install -r requirements.txt```
-
 
 
 ````python3 -m venv blockchain-env```` </br>
