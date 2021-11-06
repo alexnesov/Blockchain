@@ -1,6 +1,6 @@
 # Blockchain
 
-[![This package is currently under development.](https://img.shields.io/badge/under-development-orange.svg)
+![This package is currently under development.](https://img.shields.io/badge/under-development-orange.svg)
 
 
 3 blockchain projects: 
@@ -20,6 +20,7 @@
 
 
 **Run the tests**</br>
-Make sure to activate the virtual env
-
+Make sure to activate the virtual env </br>
+In Python version, type: </br>
 ```python3 -m pytest backend/tests``` 
+
