@@ -1,4 +1,5 @@
 """
+By converting the hashes from their default hexadecimal form to a binary form, a more precise leading 0's requirement can be implemented.
 """
 
 from backend.util.crypto_hash import crypto_hash
