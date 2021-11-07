@@ -16,9 +16,7 @@ Make sure to activate the virtual env </br>
 In Python version, type: </br>
 ```python3 -m pytest backend/tests```
 
-</br>
-Thank you David Katz for the source code regarding the Python version.
-
+<hr>
 
 **Proof of work**</br>
 Crucial for the stable work of the blockchain. </br>
@@ -40,7 +38,6 @@ formatted properly and follow the rules of our blockchain, such as:
 
 
 </br>
-How is the <b>proof of work system implemented here</b>?
 
 
 
@@ -52,3 +49,9 @@ How is the <b>proof of work system implemented here</b>?
     <li> Valid Hash
     <li> Valid Proof of Work
 </ul>
+
+
+
+
+</br>
+Thank you David Katz for the source code regarding the Python version.
