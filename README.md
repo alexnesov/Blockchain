@@ -24,3 +24,5 @@ Make sure to activate the virtual env </br>
 In Python version, type: </br>
 ```python3 -m pytest backend/tests``` 
 
+</br>
+Thank you David Katz for the source code regarding the Python version.
