@@ -10,19 +10,21 @@
   <li>C++
 </ul>
 
+Interesting take from TradingView:
 
-**Activate the virtual environment**:
-```source blockchain-env/bin/activate```
-
-
-````python3 -m venv blockchain-env```` </br>
-````python3 -m backend.blockchain.block```` </br>
+"Who will lead connectivity for Web 3.0? #NKN" </br>
 
 
-**Run the tests**</br>
-Make sure to activate the virtual env </br>
-In Python version, type: </br>
-```python3 -m pytest backend/tests``` 
 
-</br>
-Thank you David Katz for the source code regarding the Python version.
+"TLDR SUMMARY: For Web 3.0 (Decentralized Internet) there are 3 main components like today’s internet - Compute, Storage, and Network. Think BTC /ETH for compute, File Coin / Storj / Siacoin for storage, and NKN for Network. In my opinion NKN could be the Cisco of the future.
+
+Use cases: </br>
+<ul>
+ <li> -Better perf and lower latency due to decentralized structure (non-centralized servers).
+ <li> - Have the ability to rent out the bandwidth you aren’t using on your home or mobile plan.
+ <li> - More nodes than any other decentralized network, leading to 0% downtime.
+ <li> - Data is stored on endpoints increasing security.
+</ul>
+"
+<br>
+Source: https://www.tradingview.com/chart/NKNUSD/x0uyraNJ-Who-will-lead-connectivity-for-Web-3-0-NKN/
