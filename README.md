@@ -20,10 +20,10 @@ Interesting take from TradingView:
 
 Use cases: </br>
 <ul>
- <li> -Better perf and lower latency due to decentralized structure (non-centralized servers).
- <li> - Have the ability to rent out the bandwidth you aren’t using on your home or mobile plan.
- <li> - More nodes than any other decentralized network, leading to 0% downtime.
- <li> - Data is stored on endpoints increasing security.
+ <li> Better perf and lower latency due to decentralized structure (non-centralized servers).
+ <li> Have the ability to rent out the bandwidth you aren’t using on your home or mobile plan.
+ <li> More nodes than any other decentralized network, leading to 0% downtime.
+ <li> Data is stored on endpoints increasing security.
 </ul>
 "
 <br>
