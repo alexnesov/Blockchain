@@ -58,3 +58,9 @@ def test_mined_block_difficulty_limits_at_1():
 
     assert mined_block.difficulty == 1
 
+
+
+def test_is_valid_block():
+    last_block  = Block.genesis()
+    block       = Block.mine_block(last_block, 'test_data')
+    Block.is_valid_block(last_block, block)
