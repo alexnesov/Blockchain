@@ -68,5 +68,12 @@ We're gonna use <b>Flask</b> to set up this server.
 </br>
 </br>
 
+**Run the application and API**
+
+```
+python3 -m backend.app
+```
+
+
 <b>Thank you David Katz for the source code regarding the Python version.</b>
 
