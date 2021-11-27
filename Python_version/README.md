@@ -12,14 +12,13 @@
 ````python3 -m backend.blockchain.block```` </br>
 
 
-**Run the tests**</br>
+**To run the tests:**</br>
 Make sure to activate the virtual env </br>
-In Python version, type: </br>
 ```python3 -m pytest backend/tests```
 
 <hr>
 
-**Proof of work**</br>
+### Proof of work
 Crucial for the stable work of the blockchain. </br>
 
 <b>Proof of work</b> is a mechanism that requires miners to solve a computational puzzle in order to create valid
@@ -52,7 +51,22 @@ formatted properly and follow the rules of our blockchain, such as:
 </ul>
 
 
+The idea is that each individual in the network will own a blockchain instance and they should be able to <b>interact</b> with it whenever they want.
+So, to facilitate a system where an individual has their own blochchain instance we're gonna setup an API.
 
+We're gonna start by implementing two main methods:
+
+<ul>
+<li> One reading the block and change data. That way you can figure out the contents of the blockchain data itself
+<li> One to add and mine a new block
+</ul>
+
+How are we gonna interact with the API? We're going to set up a webserver.
+The server is gonna expose a handful of HTTP requests.
+We're gonna use <b>Flask</b> to set up this server.
 
 </br>
-Thank you David Katz for the source code regarding the Python version.
+</br>
+
+<b>Thank you David Katz for the source code regarding the Python version.</b>
+
