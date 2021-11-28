@@ -50,6 +50,7 @@ formatted properly and follow the rules of our blockchain, such as:
     <li> Valid Proof of Work
 </ul>
 
+### Blockchain network
 
 The idea is that each individual in the network will own a blockchain instance and they should be able to <b>interact</b> with it whenever they want.
 So, to facilitate a system where an individual has their own blochchain instance we're gonna setup an API.
