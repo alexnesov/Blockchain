@@ -76,5 +76,19 @@ python3 -m backend.app
 ```
 
 
+### Real-time messaging network through pub/sub
+
+We need the ability to broadcast update of a local blockchain to all the peers of a network.
+To implement this capbility we will take advantage of what we call the sub/pub (Subscriber/Publisher) pattern.
+
+
+We'll create multiple channels:
+
+    - The block channel 
+
+
+We'll use PubNub to create this server to server communication layer
+
+
 <b>Thank you David Katz for the source code regarding the Python version.</b>
 
