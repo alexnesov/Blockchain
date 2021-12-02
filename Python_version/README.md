@@ -1,20 +1,32 @@
 
 <b> Testing the blockchain: </b><br>
 
-```python3 -m backend.scripts.average_block_rate```
+```
+python3 -m backend.scripts.average_block_rate
+```
 
 
 **Activate the virtual environment**:
-```source blockchain-env/bin/activate```
+```
+source blockchain-env/bin/activate
+```
 
 
-````python3 -m venv blockchain-env```` </br>
-````python3 -m backend.blockchain.block```` </br>
+```
+python3 -m venv blockchain-env
+```
+
+```
+python3 -m backend.blockchain.block
+```
+</br>
 
 
 **To run the tests:**</br>
 Make sure to activate the virtual env </br>
-```python3 -m pytest backend/tests```
+```
+python3 -m pytest backend/tests
+```
 
 <hr>
 
