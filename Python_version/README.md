@@ -62,7 +62,7 @@ formatted properly and follow the rules of our blockchain, such as:
     <li> Valid Proof of Work
 </ul>
 
-### Blockchain network
+## Blockchain network
 
 The idea is that each individual in the network will own a blockchain instance and they should be able to <b>interact</b> with it whenever they want.
 So, to facilitate a system where an individual has their own blochchain instance we're gonna setup an API.
@@ -99,7 +99,44 @@ We'll create multiple channels:
     - The block channel 
 
 
-We'll use PubNub to create this server to server communication layer
+We'll use PubNub to create this server to server communication layer.
+
+
+The main hindrance that we have with a simple Flask app is that all the instance of the same application will try to use the same port by default.
+The ```app.run()``` line of code at the bottom of our __init__ file uses port 5000. <br>
+<b>Issue: </b> The host machine can only allow one program to run at a port at a time.
+Therefore, we'll need some sort of mechanism to allow <b>peer nodes</b> to run on a different port other than 5000.
+
+<br>
+
+After doing a ```export PEER=True && python3 -m backend.app``` there won't be a ```OSError: [Errno 98] Address already in use``` (port already in use)
+
+<br>
+
+To test this, fire 3 terminals:
+
+First terminal:                         ```python3 -m backend.app```<br>
+Second (runnin a peer instance):         ```export PEER=True && python3 -m backend.app``` <br>
+Third:          ```python3 -m backend.pubsub```
+
+We now know that the pubsub layer can be used to communicate to all instance of a blockchain network.
+Each node has it's own instance of the pubsub class, subscribed and listening to this test channel
+</br>
+We'll now add the ability to <b>broadcast</b> a block object to all the nodes. That way, when an instance mines a new block we can alert all the other nodes in the network of that new block data and everyone will have a chance to synchronize to the blockchain as long as the new block is valid.
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 <b>Thank you David Katz for the source code regarding the Python version.</b>
