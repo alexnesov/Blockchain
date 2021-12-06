@@ -71,12 +71,23 @@ class Block:
 
         return Block(timestamp, last_hash, hash, data, difficulty, nonce)
 
+
     @staticmethod
     def genesis():
         """
         Generate the genesis block.
         """
         return Block(**GENESIS_DATA)
+
+
+    @staticmethod
+    def from_json(block_json):
+        """
+        Deserilize a block's json representation back into a block instance.
+        """
+        return Block(**block_json)    
+
+
 
     @staticmethod
     def adjust_difficulty(last_block, new_timestamp):
