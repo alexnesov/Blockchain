@@ -116,7 +116,7 @@ After doing a ```export PEER=True && python3 -m backend.app``` there won't be a 
 To test this, fire 3 terminals:
 
 1:                         ```python3 -m backend.app```<br>
-2 (runnin a peer instance):         ```export PEER=True && python3 -m backend.app``` <br>
+2:         ```export PEER=True && python3 -m backend.app``` (running a peer instance)<br>
 3:          ```python3 -m backend.pubsub```
 
 We now know that the pubsub layer can be used to communicate to all instance of a blockchain network.
