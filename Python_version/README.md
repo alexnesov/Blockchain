@@ -99,7 +99,7 @@ We'll create multiple channels:
     - The block channel 
 
 
-We'll use PubNub to create this server to server communication layer.
+We'll use PubNub to create this communication layer.
 
 
 The main hindrance that we have with a simple Flask app is that all the instance of the same application will try to use the same port by default.
@@ -115,9 +115,9 @@ After doing a ```export PEER=True && python3 -m backend.app``` there won't be a 
 
 To test this, fire 3 terminals:
 
-First terminal:                         ```python3 -m backend.app```<br>
-Second (runnin a peer instance):         ```export PEER=True && python3 -m backend.app``` <br>
-Third:          ```python3 -m backend.pubsub```
+1:                         ```python3 -m backend.app```<br>
+2 (runnin a peer instance):         ```export PEER=True && python3 -m backend.app``` <br>
+3:          ```python3 -m backend.pubsub```
 
 We now know that the pubsub layer can be used to communicate to all instance of a blockchain network.
 Each node has it's own instance of the pubsub class, subscribed and listening to this test channel
