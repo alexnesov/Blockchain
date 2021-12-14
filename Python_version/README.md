@@ -114,6 +114,9 @@ We'll now add the ability to <b>broadcast</b> a block object to all the nodes. T
 
 
 
+The wallet keys are responsible for generating signatures on behalf of the wallet.
+The wallet needs to generate these signatures in order to authorize things like transactions.
+
 
 **To activate the virtual environment**:
 ```
