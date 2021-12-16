@@ -44,7 +44,11 @@ if os.environ.get('PEER') == 'True':
     result              = requests.get(f'http://localhost:{ROOT_PORT}/blockchain')
     result_blockchain   = Blockchain.from_json(result.json())
 
-    blockchain.replace_chain(result_blockchain.chain)
+    try:
+        blockchain.replace_chain(result_blockchain.chain)
+        print('\n -- Successfully synchronized the local chain')
+    except Exception as e:
+        print(f'\n -- Error synchronizing: {e}')
 
 
 app.run(port = PORT)

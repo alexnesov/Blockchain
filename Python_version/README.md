@@ -13,6 +13,14 @@ Make sure to activate the virtual env </br>
 python3 -m pytest backend/tests
 ```
 
+(README in construction)
+
+
+- Where and how does the proof-of-work system work? 
+
+- Where and how is the double spend problem resolved?
+
+
 
 ### Proof of work
 Crucial for the stable work of the blockchain. </br>
@@ -115,7 +123,7 @@ We'll now add the ability to <b>broadcast</b> a block object to all the nodes. T
 
 
 The wallet keys are responsible for generating signatures on behalf of the wallet.
-The wallet needs to generate these signatures in order to authorize things like transactions.
+The wallet needs to generate these signatures in order to authorize things like transactions. The keys come in a pair: the private and the public keys.
 
 
 **To activate the virtual environment**:
@@ -132,7 +140,6 @@ python3 -m venv blockchain-env
 python3 -m backend.blockchain.block
 ```
 </br>
-
 
 
 
