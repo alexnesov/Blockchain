@@ -110,5 +110,5 @@ It needs to support 3 behaviors:
 
 
 Everyone has their own running version and the key is making sure that all transaction pools
-stay SYNCHRONIZED
+stay SYNCHRONIZED.
 """

@@ -1,5 +1,3 @@
-
-  
 import time
 
 from backend.util.crypto_hash import crypto_hash
@@ -42,12 +40,10 @@ class Block:
     def __eq__(self, other):
         return self.__dict__ == other.__dict__
 
-
     def to_json(self):
         """
-        Serialize the block into a dictionarry of it's attributes
+        Serialize the block into a dictionary of its attributes
         """
-
         return self.__dict__
 
     @staticmethod
@@ -67,10 +63,8 @@ class Block:
             timestamp = time.time_ns()
             difficulty = Block.adjust_difficulty(last_block, timestamp)
             hash = crypto_hash(timestamp, last_hash, data, difficulty, nonce)
-            print('crypto hash: ', hex_to_binary(hash))
 
         return Block(timestamp, last_hash, hash, data, difficulty, nonce)
-
 
     @staticmethod
     def genesis():
@@ -79,15 +73,12 @@ class Block:
         """
         return Block(**GENESIS_DATA)
 
-
     @staticmethod
     def from_json(block_json):
         """
         Deserialize a block's json representation back into a block instance.
         """
-        return Block(**block_json)    
-
-
+        return Block(**block_json)
 
     @staticmethod
     def adjust_difficulty(last_block, new_timestamp):
