@@ -24,7 +24,6 @@ start_blockchain = get_blockchain()
 print(f'start_blockchain: {start_blockchain}')
 
 
-
 recipient = Wallet().address
 
 post_wallet_transact_1 = post_wallet_transact(recipient, 21)
